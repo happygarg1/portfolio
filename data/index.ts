@@ -1,9 +1,16 @@
-export const navItems = [
+export type NavItem = {
+  name: string;
+  link: string;
+  icon?: React.ReactNode; // Optional icon
+};
+
+export const navItems:NavItem[] = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#Achievements" },
     { name: "Contact", link: "#contact" },
   ];
+  
   
   export const gridItems = [
     {

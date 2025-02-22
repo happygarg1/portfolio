@@ -3,6 +3,7 @@ import { projects } from '@/data'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const RecentProjects = () => {
     return (
@@ -17,9 +18,9 @@ const RecentProjects = () => {
                         <PinContainer title={link} href={link}>
                             <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10'>
                                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                    <img src="/bg.png" alt="bg-img" />
+                                    <Image src="/bg.png" alt="bg-img" width={1000} height={1000} />
                                 </div>
-                                <img src={img} alt={title} className='z-10 absolute bottom-0' />
+                                <Image src={img} alt={title} width={1000} height={1000} className='z-10 absolute bottom-0' />
                             </div>
                             <h1 className='font-bold lg:text-2xl md:text-2xl text-base line-clamp-1'>{title}</h1>
                             <p className='lg:text-xl lg:font-extralight font-light text-sm line-clamp-2'>{des}</p>
@@ -34,7 +35,7 @@ const RecentProjects = () => {
                                                 transform: `translateX(-${5 * index * 2}px)`,
                                             }}
                                         >
-                                            <img src={icon} alt={icon} className="p-2" />
+                                            <Image src={icon} alt={icon} width={100} height={100} className="p-2" />
                                         </div>
                                     ))}
                                 </div>

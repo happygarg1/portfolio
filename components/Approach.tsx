@@ -21,7 +21,7 @@ const Approach = () => {
             Planning & Strategy
           </h2>
           <p className="absolute hidden lg:block mt-1 text-gray-300 text-sm px-2">
-          We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.
+          We&apos;ll collaborate to map out your website&apos;s goals, target audience, and key functionalities. We&apos;ll discuss things like site structure, navigation, and content requirements.
           </p>
         </LampContainer>
 
@@ -52,7 +52,7 @@ const Approach = () => {
             Launch & Maintenance
           </h2>
           <p className="absolute hidden lg:block mt-1 text-gray-300 text-sm px-2">
-          This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.
+          This is where the magic happens! Based on the approved design, I&apos;ll translate everything into functional code, building your website from the ground up.
           </p>
         </LampContainer>
       </div>
