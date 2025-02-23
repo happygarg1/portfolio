@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  eslint:{
-    ignoreDuringBuilds:true,
+  output: "export", // Enables static export
+  images: {
+    unoptimized: true, // Disable image optimization
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 

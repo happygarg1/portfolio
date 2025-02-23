@@ -7,6 +7,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import Image from "next/image";
+import Link from "next/link";
 const roles = [
   " MERN Stack Developer based in India",
   " C++ Programmer based in India",
@@ -58,12 +59,12 @@ const Hero = () => {
                 </span>
                 </div>
 
-                <a href='https://drive.google.com/file/d/...' target="_blank" rel="noopener noreferrer">
+                <Link href='https://drive.google.com/file/d/1LQF4-f9UQqd6w2IT0j4jkWuPrqrM3NxC/view?usp=sharing' target="_blank" rel="noopener noreferrer">
                   <MagicButton title="Check Out My CV"
                     icon={<FaLocationArrow/>}
                     position='right'
                   />
-                </a>
+                </Link>
             </div>
        </div>
     </div>

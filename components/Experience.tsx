@@ -5,6 +5,7 @@ import { Button } from './ui/MovingBorders'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Experience = () => {
   return (
@@ -31,7 +32,7 @@ const Experience = () => {
                         <Image 
                             src={card.thumbnail} 
                              alt={card.title} 
-                              width={128} // Use a width & height for optimization
+                             width={128} // Use a width & height for optimization
                              height={128} 
                              className='lg:w-32 md:w-20 w-16'
                              loading="lazy" 
@@ -39,13 +40,13 @@ const Experience = () => {
                             <div className='lg:ms-5'>
                                 <h1 className='text-start text-xl md:text-3xl font-bold'>{card.title}</h1>
                                 <p className='text-start text-white mt-3 font-semibold'>{card.desc}</p>
-                               <a href={card.link} target="_blank" rel="noopener noreferrer">
-                               <MagicButton title="Know More" 
+                               <Link href={card.link} target="_blank" rel="noopener noreferrer">
+                                <MagicButton title="Know More" 
                                  icon={<FaLocationArrow/>}
                                  position='right'
                                  
                               />
-                               </a>
+                               </Link>
                             </div>
                         </div>
                     </Button>

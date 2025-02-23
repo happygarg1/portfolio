@@ -1,3 +1,5 @@
+import { link } from "node:fs";
+
 export type NavItem = {
   name: string;
   link: string;
@@ -118,7 +120,7 @@ export const navItems:NavItem[] = [
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
-      tit:"https://www.linkedin.com/in/himani-garg-551937255/",
+      link:"https://www.linkedin.com/in/himani-garg-551937255/",
     },
     {
       id: 2,
@@ -126,7 +128,7 @@ export const navItems:NavItem[] = [
       desc: "Participated in the ICPC Regionals, showcasing my competitive programming skills and got 329 rank.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
-      tit:"https://www.linkedin.com/in/himani-garg-551937255/",
+      link:"https://www.linkedin.com/in/himani-garg-551937255/",
     },
     {
       id: 3,
@@ -134,7 +136,7 @@ export const navItems:NavItem[] = [
       desc: "Solved 750+ questions and attained a 1750+ rating",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
-      tit:"https://leetcode.com/u/happygarg/"
+      link:"https://leetcode.com/u/happygarg/"
     },
     {
       id: 4,
