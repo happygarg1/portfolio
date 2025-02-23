@@ -65,29 +65,35 @@ export const BackgroundGradientAnimation = ({
   
 
   useEffect(() => {
-    function move() {
-      if (!interactiveRef.current) return;
+    let animationFrameId: number;
+    
+    const move = () => {
       setCurX((prevX) => prevX + (tgX - prevX) / 20);
       setCurY((prevY) => prevY + (tgY - prevY) / 20);
-      interactiveRef.current.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
-    }
+      animationFrameId = requestAnimationFrame(move);
+    };
+  
     move();
-  }, [tgX, tgY, curX, curY]); // Add curX and curY to the dependency array
+    
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [tgX, tgY]);
+  // Add curX and curY to the dependency array
   
   
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (interactiveRef.current) {
-      const rect = interactiveRef.current.getBoundingClientRect();
-      setTgX(event.clientX - rect.left);
-      setTgY(event.clientY - rect.top);
-    }
+    const rect = interactiveRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    setTgX(event.clientX - rect.left);
+    setTgY(event.clientY - rect.top);
   };
+  
 
   const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
-  }, []);
+
+useEffect(() => {
+  setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+}, []);
 
   return (
     <div

@@ -142,7 +142,7 @@ export const navItems:NavItem[] = [
       desc: "3* on Codechef,Achieved a 1600+ rating with global rank 129,185,436",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
-      tit:"https://www.codechef.com/users/himanigarg08",
+      link:"https://www.codechef.com/users/himanigarg08",
     },
   ];
   
@@ -150,13 +150,16 @@ export const navItems:NavItem[] = [
     {
       id: 1,
       img: "/git.svg",
+      link:"https://www.linkedin.com/in/himani-garg-551937255/",
     },
     {
       id: 2,
       img: "/twit.svg",
+      link:"https://www.linkedin.com/in/himani-garg-551937255/",
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/himani-garg-551937255/",
     },
   ];

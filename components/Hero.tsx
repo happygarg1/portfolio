@@ -42,8 +42,9 @@ const Hero = () => {
 
                 <TextGenerateEffect className='text-center text-[90px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless Experiences'/>
 
-                <span className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl flex flex-row gap-2'>
+                <div className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl flex flex-row gap-2'>
                   Hi, I&apos; <span className='text-purple'>Himani</span>
+                  <span>
                   <motion.p
         key={index}
         initial={{ opacity: 0, y: 20 }}
@@ -55,8 +56,9 @@ const Hero = () => {
         { roles[index]}
       </motion.p>
                 </span>
+                </div>
 
-                <a href='https://drive.google.com/file/d/1RKOfK91qXt5JZiRh8hH7tLBDrqt0zm8b/view?usp=drivesdk' target="_blank" >
+                <a href='https://drive.google.com/file/d/...' target="_blank" rel="noopener noreferrer">
                   <MagicButton title="Check Out My CV"
                     icon={<FaLocationArrow/>}
                     position='right'
