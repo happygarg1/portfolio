@@ -9,7 +9,7 @@ export type NavItem = {
 export const navItems:NavItem[] = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#Achievements" },
+    { name: "Achievements", link: "#Achievements" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -152,7 +152,7 @@ export const navItems:NavItem[] = [
     {
       id: 1,
       img: "/git.svg",
-      link:"https://www.linkedin.com/in/himani-garg-551937255/",
+      link:"https://github.com/happygarg1",
     },
     {
       id: 2,

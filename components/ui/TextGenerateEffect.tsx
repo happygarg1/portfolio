@@ -18,12 +18,13 @@ export const TextGenerateEffect = ({
   const wordsArray = words.split(" ");
 
   useEffect(() => {
+    if (!animate) return;
     animate(
       "span",
       { opacity: 1, filter: "blur(0px)" },
       { duration, delay: stagger(0.2) }
     );
-  }, [duration, filter]); // Removed animate from dependency array ✅
+  }, [scope,duration, filter]); // Removed animate from dependency array ✅
 
   return (
     <div className={cn("font-bold", className)}>

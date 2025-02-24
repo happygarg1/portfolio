@@ -10,6 +10,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Experience = () => {
+    const [duration, setDuration] = useState(12000); // Default value
+
+                useEffect(() => {
+                  setDuration(Math.floor(Math.random() * 10000) + 10000);
+                }, []);
   return (
     <div className='py-2' id='Achievements'>
         <h1 className='heading'>
@@ -18,11 +23,7 @@ const Experience = () => {
         </h1>
         <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
             {workExperience.map((card) => {
-                const [duration, setDuration] = useState(12000); // Default value
-
-                useEffect(() => {
-                  setDuration(Math.floor(Math.random() * 10000) + 10000);
-                }, []);
+                
                 return (
                     <Button 
                         key={card.id} 

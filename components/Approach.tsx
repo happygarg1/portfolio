@@ -17,10 +17,10 @@ const Approach = () => {
           >
             Build lamps <br /> the right way
           </motion.h1>
-          <h2 className="absolute lg:-mt-8 text-xl font-semibold text-white">
+          <h2 className="absolute lg:mt-12 text-xl font-semibold text-white">
             Planning & Strategy
           </h2>
-          <p className="absolute hidden lg:block mt-1 text-gray-300 text-sm px-2">
+          <p className="absolute hidden lg:block mt-20 text-gray-300 text-sm px-2">
           We&apos;ll collaborate to map out your website&apos;s goals, target audience, and key functionalities. We&apos;ll discuss things like site structure, navigation, and content requirements.
           </p>
         </LampContainer>
@@ -33,10 +33,10 @@ const Approach = () => {
           >
             Build lamps <br /> the right way
           </motion.h1>
-          <h2 className="absolute lg:-mt-8 text-xl font-semibold text-white">
+          <h2 className="absolute lg:mt-12 text-xl font-semibold text-white">
             Design & Development
           </h2>
-          <p className="absolute hidden lg:block mt-1 text-gray-300 text-sm px-2">
+          <p className="absolute hidden lg:block mt-20 text-gray-300 text-sm px-2">
           Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.
           </p>
         </LampContainer>
@@ -48,10 +48,10 @@ const Approach = () => {
           >
             Build lamps <br /> the right way
           </motion.h1>
-          <h2 className="absolute lg:-mt-8 text-xl font-semibold text-white">
+          <h2 className="absolute lg:mt-12 text-xl font-semibold text-white">
             Launch & Maintenance
           </h2>
-          <p className="absolute hidden lg:block mt-1 text-gray-300 text-sm px-2">
+          <p className="absolute hidden lg:block mt-20 text-gray-300 text-sm px-2">
           This is where the magic happens! Based on the approved design, I&apos;ll translate everything into functional code, building your website from the ground up.
           </p>
         </LampContainer>
