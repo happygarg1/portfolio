@@ -17,7 +17,7 @@ const MagicButton: React.FC<MagicButtonProps> = ({
   otherClasses = "",
 }) => {
   return (
-    <button
+    <p
       className="relative w-full rounded-lg inline-flex h-12 overflow-hidden p-[1px] focus:outline-none md:w-60 md:mt-10"
       onClick={handleClick}
     >
@@ -32,7 +32,7 @@ const MagicButton: React.FC<MagicButtonProps> = ({
         {title}
         {position === "right" && icon}
       </span>
-    </button>
+    </p>
   );
 };
 

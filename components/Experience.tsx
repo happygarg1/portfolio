@@ -1,3 +1,5 @@
+"use client";
+
 import { workExperience } from '@/data'
 import React from 'react'
 import { useState, useEffect } from 'react'
@@ -27,7 +29,7 @@ const Experience = () => {
                         duration={duration} 
                         borderRadius='1.75rem' 
                         className='flex-1 text-white border-neutral-200 dark:border-slate-800'
-                    >
+                    ><div>
                         <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
                         <Image 
                             src={card.thumbnail} 
@@ -40,7 +42,7 @@ const Experience = () => {
                             <div className='lg:ms-5'>
                                 <h1 className='text-start text-xl md:text-3xl font-bold'>{card.title}</h1>
                                 <p className='text-start text-white mt-3 font-semibold'>{card.desc}</p>
-                               <Link href={card.link} target="_blank" rel="noopener noreferrer">
+                               < Link href={card.link} target="_blank" rel="noopener noreferrer">
                                 <MagicButton title="Know More" 
                                  icon={<FaLocationArrow/>}
                                  position='right'
@@ -48,7 +50,7 @@ const Experience = () => {
                               />
                                </Link>
                             </div>
-                        </div>
+                        </div></div>
                     </Button>
                 );
             })}

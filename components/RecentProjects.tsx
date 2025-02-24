@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import { projects } from '@/data'
 import { PinContainer } from './ui/3d-pin'
@@ -6,6 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const RecentProjects = () => {
+    
     return (
         <div className='py-20' id='projects'>
             <h1 className='heading'>
