@@ -41,7 +41,7 @@ const Hero = () => {
                 <Image src="/him.png" alt="Profile Image" width={350} height={350} className="rounded-full -m-12 ml-2 mb-1"/>
                 </h2>
 
-                <TextGenerateEffect className='text-center text-[90px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless Experiences'/>
+                <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless Experiences'/>
 
                 <div className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl flex flex-row gap-2'>
                   Hi, I&apos; <span className='text-purple'>Himani</span>
