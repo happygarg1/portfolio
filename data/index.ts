@@ -1,5 +1,3 @@
-import { link } from "node:fs";
-
 export type NavItem = {
   name: string;
   link: string;
@@ -81,11 +79,11 @@ export const navItems:NavItem[] = [
   export const projects = [
     {
       id: 1,
-      title: "AKTU-GHAR",
-      des: "Explore the world where knowledge meets convenience!,Users can explore, purchase, and master courses with an intuitive experience, seamless payments, and interactive learning tools. Education, redefined.",
-      img: "/AktuGhar.png",
+      title: "Desi-Zaika",
+      des: "A smart food delivery platform that lets admins build restaurant menus and users enjoy effortless ordering after login.",
+      img: "/DesiZaika.png",
       iconLists: ["/re.svg", "/tail.svg","/node.svg","./mongo.svg","./clo.svg"],
-      link: "https://github.com/ishikajain1234/AKTU-GHAR",
+      link: "https://github.com/happygarg1/Desi-Zaika",
     },
     {
       id: 2,

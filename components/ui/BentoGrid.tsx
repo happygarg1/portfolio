@@ -1,7 +1,12 @@
 "use client";
+// BentoGrid.tsx or wherever you're using Lottie
+import dynamic from 'next/dynamic'
+
+// Dynamically import react-lottie with SSR disabled
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false })
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import { useState, useEffect } from "react";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
